@@ -1,0 +1,14 @@
+lgoritmo "contarare11"
+var
+ contador,valor :inteiro
+inicio
+ contador<-0
+ escreva("quer contar ate quanto?")
+ leia(valor)
+ enquanto (contador<=valor) faca
+  escreval(contador)
+  contador<-contador+1
+ fimenquanto
+  escreval(" terminei de contar galera!")
+
+fimalgoritmo

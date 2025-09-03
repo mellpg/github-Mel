@@ -1,0 +1,21 @@
+algoritmo "Contarsomaremaior"
+
+ var
+
+contador,x,soma,maior:inteiro
+inicio
+ contador<-0
+ soma<-0
+ enquanto (contador <=3 ) faca
+   escreva("digite um valor:"))
+   leia(x)
+ se (x > maior) entao
+   maior <-x
+ fimse
+   contador<-contador+1
+    soma<- soma+x
+ fimenquanto
+  escreval(" a soma de todos os valores e", soma, "e o maior numero e", maior)
+   
+
+fimalgoritmo

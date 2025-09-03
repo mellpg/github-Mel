@@ -1,0 +1,12 @@
+algoritmo "temperatura"
+  var
+    fah,celc:real
+
+  inicio
+  escreva("quanto e a temperatura aqui?")
+  leia(fah)
+   celc<-(fah-32)/1.8
+   escreval("a temperatura nos eua e", celc)
+
+
+  fimalgoritmo

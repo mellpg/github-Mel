@@ -1,0 +1,15 @@
+algoritmo "rept2contarate4"
+var
+ contador:inteiro
+
+inicio
+ contador <-1
+ repita
+    escreval(contador)
+    contador <- contador +1
+ 
+ 
+
+ Ate(contador >4 )
+
+fimalgoritmo

@@ -1,0 +1,22 @@
+algoritmo "somar eles"
+var
+   contador,m,s, maior:inteiro
+inicio
+ contador<-1
+ s<-0
+ enquanto (contador<=5) faca
+  escreva("digite um valor")
+  leia(m)
+  se (m> maior) entao
+   maior<- m
+  fimse
+  contador<- contador+1
+  s<- s+m
+ fimenquanto
+  escreva(" a soma de todos os valores foi", s )
+
+  escreval(" o maior valor e ", maior )
+
+
+
+fimalgoritmo

@@ -1,0 +1,13 @@
+algoritmo "exercicio"
+var
+ dolares,reais: real
+
+inicio
+ escreva("quantos R$ eu tenho?")
+ leia(reais)
+ escreval("quantos dolares eu tenho?")
+ dolares<-reais/5.20
+ escreva("eu tenho ", dolares)
+
+
+fimalgoritmo
