@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1741376112 source:c:\users\mel\documents\codeblocks c\novo getc\main.c
+	<stdio.h>
+	<stdlib.h>
+

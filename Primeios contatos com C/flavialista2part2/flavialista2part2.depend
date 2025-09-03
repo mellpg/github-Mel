@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1743346004 source:c:\users\mel\documents\codeblocks c\flavialista2part2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+	<locale.h>
+	<stdlib.h>
+

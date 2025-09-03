@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1743635170 source:c:\users\mel\documents\codeblocks c\divisivelpor2,3,5,4ou nehum\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+

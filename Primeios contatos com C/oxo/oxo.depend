@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1742583371 source:c:\users\mel\documents\codeblocks c\oxo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+

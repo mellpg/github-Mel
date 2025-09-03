@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1741528757 source:c:\users\mel\documents\codeblocks c\buffer exerc\main.c
+	<stdio.h>
+	<stdlib.h>
+

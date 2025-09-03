@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1743628296 source:c:\users\mel\documents\codeblocks c\switch case\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+

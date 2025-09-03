@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1741522938 source:c:\users\mel\documents\codeblocks c\sexo,idade,pwso,altura\main.c
+	<stdio.h>
+	<stdlib.h>
+

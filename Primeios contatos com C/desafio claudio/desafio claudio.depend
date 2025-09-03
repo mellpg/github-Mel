@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1746485048 source:c:\users\mel\documents\codeblocks c\desafio claudio\main.c
+	<stdio.h>
+	<stdlib.h>
+

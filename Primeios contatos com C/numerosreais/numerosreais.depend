@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1740778515 source:c:\users\mel\documents\codeblocks c\numerosreais\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1742333932 source:c:\users\mel\documents\codeblocks c\trocar 2 varav\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1742755700 source:c:\users\mel\documents\codeblocks c\operadores relacionais\main.c
+	<stdio.h>
+	<stdlib.h>
+

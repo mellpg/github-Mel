@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1741376422 source:c:\users\mel\documents\codeblocks c\fgetc\main.c
+	<stdio.h>
+	<stdlib.h>
+

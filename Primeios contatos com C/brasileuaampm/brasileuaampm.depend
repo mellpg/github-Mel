@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1742326305 source:c:\users\mel\documents\codeblocks c\brasileuaampm\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
