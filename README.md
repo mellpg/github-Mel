@@ -7,7 +7,7 @@ public class Saque {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Digite o valor que deseja sacar: R$ ");
+      System.out.print("Digite o valor que deseja sacar: R$ ");
         String entrada = sc.nextLine(); // pega como String para evitar problemas de vírgula/ponto
 
         // Cria BigDecimal a partir da String
