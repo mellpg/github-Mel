@@ -103,7 +103,4 @@ Gerenciar compartilhamentos.
 
 
 
----
-
-Quer que eu monte isso em formato README.md bonitão de estudo (tipo guia de bolso), igual GitHub?
 
