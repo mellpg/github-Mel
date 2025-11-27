@@ -41,7 +41,7 @@ void ordenar(Aluno vetor[], int qtd){
 // Função para imprimir alunos
 void imprimir(Aluno vetor[], int qtd) {
     for (int i = 0; i < qtd; i++) {
-        printf("Aluno: %s", vetor[i].nome);
+        printf("Aluno: %s\n", vetor[i].nome);
         printf("Nota: %.2f\n", vetor[i].nota);
     }
     printf("-------------------------\n");
