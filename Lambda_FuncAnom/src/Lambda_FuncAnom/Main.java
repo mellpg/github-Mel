@@ -25,6 +25,14 @@ public class Main {
 		// de forma curta para facilitar
 		// Sintaxe: (parametros) -> resultado ou bloco de código
 		// Sintaxe: (parametros) -> resultado ou bloco de código
+		// Quando se deve usar?
+		// Quando se precisa de uma tarefa simples
+		// e de uso único
+		// Exemplos: map(), filter(), reduce() e sort()
+		// Python, JavaScript, Java, C#, etc. As lambdas evitam a criação
+		// de funções nomeadas apenas para essa finalidade [1].
+		// Clique de botão, Closures e Callback e Usar uma lambda como valor
+		// padrão ou opcional para um parâmetro de função
 
 		// Aplicando:
 
