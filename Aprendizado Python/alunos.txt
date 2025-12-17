@@ -1,0 +1,11 @@
+Yasmin;16/06/2006;12345678;psicologia
+Mel;16/06/2006;1234567898;Ciencia da computacao
+yasmin;16/06/2006;12345609732;psicologia
+Mel;16/06/2006;12625116431;cienciad[
+Mel;16/06/2006;12625116431;Ciencia da computação
+Yasmin;16/06/2006;12625116431;Psicologia
+Mel pereira guimaraes;16/06/2006;12625116432;Ciencia da computacao
+Yasmin pereira guimaraes;16/06/2006;1235679854;Psicologia
+Maria da conceicao pereira guimaraes;16/06/1964;1230974567;Pedagogia
+Wilson correia filho;16/10/1964;1230983234;Economia
+Bruno perwira guimaraes;13/09/1996;12345663442;Relaçoes internacionais
