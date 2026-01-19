@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module Classe_String {
-}
