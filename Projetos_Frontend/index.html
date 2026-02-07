@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .calculadora {
+            width: 300px;
+            padding: 16px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        #visor {
+            width: 100%;
+            height: 64px;
+            font-size: 32px;
+            text-align: right;
+            padding: 12px;
+            margin-bottom: 16px;
+            background-color: #fafafa;
+            border: none;
+            border-bottom: 2px solid #e0e0e0;
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 100%;
+            border-spacing: 8px;
+        }
+
+        button {
+            width: 100%;
+            height: 48px;
+            font-size: 18px;
+            background-color: #f5f5f5;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .operador {
+            background-color: #e8e8e8;
+            font-weight: bold;
+        }
+
+        .igual {
+            background-color: #1976d2;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .igual:hover {
+            background-color: #1565c0;
+        }
+
+        .limpar {
+            margin-top: 14px;
+            width: 100%;
+            height: 48px;
+            font-size: 16px;
+            background-color: #eeeeee;
+            border-radius: 24px;
+            font-weight: bold;
+        }
+
+        .limpar:hover {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="calculadora">
+
+    <input type="text" id="visor" disabled>
+
+    <table>
+        <tr>
+            <td><button onclick="digitar('7')">7</button></td>
+            <td><button onclick="digitar('8')">8</button></td>
+            <td><button onclick="digitar('9')">9</button></td>
+            <td><button class="operador" onclick="digitar('/')">÷</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="digitar('4')">4</button></td>
+            <td><button onclick="digitar('5')">5</button></td>
+            <td><button onclick="digitar('6')">6</button></td>
+            <td><button class="operador" onclick="digitar('*')">×</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="digitar('1')">1</button></td>
+            <td><button onclick="digitar('2')">2</button></td>
+            <td><button onclick="digitar('3')">3</button></td>
+            <td><button class="operador" onclick="digitar('-')">−</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="digitar('0')">0</button></td>
+            <td><button onclick="digitar('.')">.</button></td>
+            <td><button class="igual" onclick="calcular()">=</button></td>
+            <td><button class="operador" onclick="digitar('+')">+</button></td>
+        </tr>
+    </table>
+
+    <button class="limpar" onclick="limpar()">LIMPAR</button>
+
+</div>
+
+<script>
+    function digitar(valor) {
+        document.getElementById('visor').value += valor;
+    }
+
+    function calcular() {
+        try {
+            let expressao = document.getElementById('visor').value;
+            document.getElementById('visor').value = eval(expressao);
+        } catch {
+            document.getElementById('visor').value = 'Erro';
+        }
+    }
+
+    function limpar() {
+        document.getElementById('visor').value = '';
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ 
+    <meta charset="UTF-8">
+
+    
+    <title>Calculadora da Mel</title>
+
+    <style>
+        /* Estilo da página */
+        body {
+            background-color: #ffe6f0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Centraliza a tabela e define cor de fundo */
+        table {
+            margin: auto;
+            text-align: center;
+            background-color: #ffc0cb;
+            border-collapse: collapse;
+        }
+
+        /* Campo onde o valor aparece */
+        input {
+            width: 100%;
+            font-size: 20px;
+            text-align: right;
+            color: #800040;
+            padding: 5px;
+        }
+
+        /* Estilo dos botões */
+        button {
+            width: 100%;
+            height: 40px;
+            font-size: 18px;
+            color: #99004d;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table border="5">
+        <caption>Minha calculadora</caption>
+
+        <!-- Nosso Visor -->
+        <tr>
+            <th colspan="4">
+                <!-- disabled impede digitação manual -->
+                <input type="text" id="visor" disabled>
+            </th>
+        </tr>
+
+        <!-- Operadores -->
+        <tr>
+            <td><button onclick="setOperador('+')">+</button></td>
+            <td><button onclick="setOperador('-')">-</button></td>
+            <td><button onclick="setOperador('*')">*</button></td>
+            <td><button onclick="setOperador('/')">/</button></td>
+        </tr>
+
+        <!-- Números -->
+        <tr>
+            <td><button onclick="digitar('7')">7</button></td>
+            <td><button onclick="digitar('8')">8</button></td>
+            <td><button onclick="digitar('9')">9</button></td>
+            <td><button onclick="setOperador('%')">%</button></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="digitar('4')">4</button></td>
+            <td><button onclick="digitar('5')">5</button></td>
+            <td><button onclick="digitar('6')">6</button></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="digitar('1')">1</button></td>
+            <td><button onclick="digitar('2')">2</button></td>
+            <td><button onclick="digitar('3')">3</button></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="digitar('0')">0</button></td>
+            <td><button onclick="digitar('.')">.</button></td>
+            <td><button onclick="calcular()">=</button></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <button onclick="limpar()">Limpar</button>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        // Armazena o primeiro número digitado
+        let valor1 = null;
+
+        // Armazena o operador selecionado (+, -, *, /, %)
+        let operador = null;
+
+        // Função chamada ao clicar nos números
+        function digitar(numero) {
+            document.getElementById('visor').value += numero;
+        }
+
+        // Função chamada ao clicar em um operador
+        function setOperador(op) {
+            // Converte o valor do visor para número
+            valor1 = parseFloat(document.getElementById('visor').value);
+
+            // Armazena o operador escolhido
+            operador = op;
+
+            // Limpa o visor para o segundo valor
+            document.getElementById('visor').value = '';
+        }
+
+        // Executa o cálculo
+        function calcular() {
+            // Lê o segundo valor
+            let valor2 = parseFloat(document.getElementById('visor').value);
+
+            let resultado;
+
+            // Estrutura de decisão para escolher a operação
+            switch (operador) {
+                case '+':
+                    resultado = valor1 + valor2;
+                    break;
+                case '-':
+                    resultado = valor1 - valor2;
+                    break;
+                case '*':
+                    resultado = valor1 * valor2;
+                    break;
+                case '/':
+                    // Evita divisão por zero
+                    if (valor2 === 0) {
+                        resultado = 'Erro';
+                    } else {
+                        resultado = valor1 / valor2;
+                    }
+                    break;
+                case '%':
+                    // Percentual: valor1 * (valor2 / 100)
+                    resultado = valor1 * (valor2 / 100);
+                    break;
+                default:
+                    resultado = 'Erro';
+            }
+
+            // Mostra o resultado no visor
+            document.getElementById('visor').value = resultado;
+        }
+
+        // Limpa todos os dados da calculadora
+        function limpar() {
+            document.getElementById('visor').value = '';
+            valor1 = null;
+            operador = null;
+        }
+    </script>
+
+</body>
+</html>
