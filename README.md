@@ -10,7 +10,7 @@
 
 ###
 
-<p align="left">✨ Cursando Ciência da computação<br>📚 Atualmente estou aprendendo sobre desenvolvimento web<br>🎯 Tenho objetivo de fortalecer meus conhecimentos e os colocar na prática!<br></p>
+<p align="left">✨ Cursando Ciência da computação<br>📚 Atualmente estou aprendendo sobre desenvolvimento web, automatação de tarefas, backend para sistemas escaláveis, banco de dados e front-end.<br>🎯 Tenho objetivo de fortalecer meus conhecimentos e os colocar na prática!<br></p>
 
 ###
 
